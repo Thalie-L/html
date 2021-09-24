@@ -1,35 +1,48 @@
 <!-- ...crickets... -->
+<<!-- ...crickets... -->
 <!DOCTYPE html>
 <html>
 <body>
 <form >
   <label >Username</label>
-  <input type="text" >
+  <input type="text" required />
    <label >password</label>
-  <input type="password" >
+  <input type="password" required/>
    <label >Email</label>
-  <input type="text" >
+  <input type="text" required>
   
   <h1>Which taxi do you require?</h1>
-  <input type="radio" >
-  <label for="html">Car</label>
-  <input type="radio" >
-  <label for="van">Van</label>
-  <input type="radio" >
-  <label for="Tuk">Tuk Tuk</label>
+ 
+  <label>
+		 <input type="radio" required id="car" name="choice" value="car" />
+		 Car
+  </label>
+ 
+  <label>
+	 <input type="radio" required id="van" name="choice" value="van" />
+		Van
+  </label>
+ 
+  <label>
+	 <input type="radio" required id="tuk" name="choice" value="tuk" / >
+	Tuk Tuk
+  </label>
 
   <h1>Choose your extras</h1> 
-  <input type="checkbox" >
+  <input type="checkbox" name="extras" />
   <label for="baby"> Baby seat</label>
-  <input type="checkbox" >
+  <input type="checkbox" name="extras" />
   <label for="chair"> Wheelchair access</label>
-  <input type="checkbox" >
+  <input type="checkbox" name="extras" />
   <label for="window"> Privacy windows</label>
   
   <h1>Where would you like us to pick you up?</h1> 
    <label >Pickup Location:</label>
-    <select name="cars" id="cars">
-    <option value="default">Select One</option>    
+    <select name="cars" id="cars" required>
+    <option value="">Select One</option>   
+    <option value="taxi">taxi</option>   
+	<option value="hotel">hotel</option>   
+	<option value="restaurant">restaurant</option>   	
   </select>
   
   <h1>Additional Instruction</h1> 
